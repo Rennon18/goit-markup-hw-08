@@ -1,0 +1,255 @@
+.footer {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-bgd-color; 
+
+    @include tablet {
+        padding-top: 0;
+    }
+
+    @include desktop {
+        padding-top: 60px;
+    }
+}
+
+.footer__contact {
+    display: block;
+    text-align: center;
+
+    @include tablet {
+        margin-left: 76px;
+    }
+
+    @include desktop {
+        text-align: start;  
+        margin-left: 0;
+    }
+}
+
+.footer__logo {
+    margin: 0;
+    margin-bottom: 20px;
+
+    &__item {
+        color: $text-color;
+    }
+
+    @include tablet {
+        display: block;
+        text-align: center;
+        margin-left: 100px;
+    }
+
+   @include desktop {
+        text-align: start;
+        margin-left: 0;
+   }
+}
+
+.footer__map {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-color;
+    transition: $animation-timing-function;
+
+    &:hover,
+    &:focus {
+        color: $link-active;
+    }
+}
+
+.footer__contacts__link {
+    padding: 0px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $footer-color-contacts;
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+// network-footer
+
+.footer__container {
+    text-align: center;
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+}
+
+.footer__block {
+
+    display: block;
+    text-align: center;
+
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.room__network {
+display: block;
+align-items: center;
+
+    @include tablet {
+        margin-left: 165px;
+    }
+
+    @include desktop {
+        margin-left: 70px;
+        margin-right: 83px;       
+    }
+}
+
+.footer__network__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__label {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.3px;
+    color: $text-color;
+    margin-bottom: 20px;
+    margin-top: 60px;
+
+    @include desktop {
+        display: flex;
+        margin-top: 0px;
+    }
+}
+
+
+.footer__network__link {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+    fill: $text-color;
+    background-color: $footer-link-color;
+    transition: background-color $animation-timing-function,
+    fill $animation-timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $link-active;
+    }
+
+
+    @include desktop {
+        margin-bottom: 0;
+    }
+}
+
+// form-footer
+
+
+.form__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border-color: transparent;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.15);
+    background-color: $link-active;
+    fill: $text-color;
+    color: $text-color;
+
+    transition: background-color $animation-timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $active-hero-button;
+    }
+}
+
+.form__icon {
+    margin-left: 10px;
+}
+
+.form__input {
+    width: 450px;
+    height: 50px;
+    padding: 0px 16px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid $form-color;
+    box-shadow:4px 0px 4px rgba(0, 0, 0, 0.15);
+    outline: none;
+    transition: border-color $animation-timing-function;
+
+    &:hover,
+    &:focus {
+        border-color: $link-active;
+    }
+
+    &--placeholder {
+        font-size: 16px;
+        line-height: 1.25px;
+        letter-spacing: 0.03em;
+        color: $text-color
+    }
+
+    @include desktop {
+        margin-bottom: 0px;
+        width: 358px;
+        margin-right: 12px;
+    }
+}
+
+.form__room {
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    @include desktop {
+        display:inline-block;
+        margin-left: 0;
+        
+    }
+}
+
+.form {
+
+    margin-left: 0;
+
+    @include tablet {
+        margin-left: 166px;
+    }
+
+    @include desktop {
+        margin-left: 0;
+    }
+}
+
+
+
+
+

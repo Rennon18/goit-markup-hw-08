@@ -1,0 +1,164 @@
+.page-header__container {
+    display: flex; 
+}
+
+.page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ececec;
+
+    @include tablet {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.navigation {
+    display: block;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.navigation__list {
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+
+    @include do {
+        display: none;
+    }
+
+    @include desktop {
+        margin-right: 300px;
+    }
+
+}
+
+.navigation__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigation__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    transition: color $animation-timing-function;
+    color: $title-color; 
+
+    &:hover,
+    &:focus {
+        color: $link-active;
+    }   
+}
+
+.link--current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $link-active;   
+}
+
+.link--current {
+    position: relative;
+    color: $link-active;
+}
+
+
+ 
+/*contacts navigation*/
+.contacts { 
+    @media screen and (max-width:767px ) {
+        display: none;
+    }
+    
+    @include tablet {
+        display: block; 
+    }
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+        padding: 0;  
+        margin: 0; 
+    }    
+}
+
+.contacts__list:not(:last-child) {
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+        padding-top: 21px;
+    }    
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+    }
+}
+
+.contacts__link {
+    display: block;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 12px;    
+    line-height: 1.16;
+    color: $link-color;
+    transition: color $animation-timing-function;
+
+    @include desktop {
+        display: inline-flex;
+        align-items: center; 
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-size: 14px; 
+        line-height: 1.17;
+    }
+    
+    
+    &:hover,
+    &:focus {
+        color: $link-active;
+    } 
+}
+
+.contacts__mail {
+       fill: currentColor;
+       width: 14px;
+       height: 10px;
+       margin-right: 8px; 
+
+    @include desktop {
+        width: 16px;
+        height: 12px;
+        margin-right: 10px; 
+    }
+}
+
+.contacts__tel {
+    fill: currentColor;
+    width: 10px;
+    height: 14px;
+    margin-right: 8px; 
+
+    @include desktop {
+         width: 10px;
+         height: 16px;
+         margin-right: 10px;
+    }
+}
+
+
+
+
+

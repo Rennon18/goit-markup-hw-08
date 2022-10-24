@@ -1,0 +1,29 @@
+.logo {
+    display: block;
+    margin-right: 284px;
+    margin-left: 0px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    font-family: Raleway, sans-serif;
+    color: $link-active;
+
+    @include mobile {
+       margin-right: 284px;
+    }
+
+    @include tablet {
+        margin-right: 88px;
+    }
+
+    @include desktop {
+        margin-right: 93px;
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.logo__item {
+    font-family: Raleway, sans-serif;
+    color: $title-color;
+}
