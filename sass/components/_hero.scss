@@ -1,0 +1,126 @@
+/*hero section*/
+
+.hero {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 480px;
+    background-color: $hero-sectiom-bg;
+
+    background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4) 
+    ), url(../images/hero-img1x-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4) 
+    ), url(../images/hero-img2x-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+    @include tablet {
+        max-width: 768px;
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4) 
+            ), url(../images/hero-img1x-tab.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        
+            background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4) 
+            ), url(../images/hero-img2x-tab.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    }
+
+    @include desktop {
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4) 
+            ), url(../images/hero-img1x-des.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        
+            background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4) 
+            ), url(../images/hero-img2x-des.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    }
+
+}
+
+
+.hero__title {  
+    text-transform: uppercase;
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    color: $text-color; 
+
+    @include desktop {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
+}
+
+/*button*/
+
+.hero__button {
+    cursor: pointer;
+    font-family: inherit;
+    padding: 10px 24px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border-color: transparent;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: $text-color;
+    background-color: $link-active;
+    transition: background-color $animation-timing-function,
+    color $animation-timing-function, box-shadow $animation-timing-function; 
+    
+    &:hover,
+    &:focus {
+    background-color: $active-hero-button;  
+  }
+
+    @include desktop {
+        padding: 10px 32px;
+    }
+}
+
+
